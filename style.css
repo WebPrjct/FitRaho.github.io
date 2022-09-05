@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    scroll-behavior: smooth;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.back{
+    background: url(image/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: -1;
+    /* background-color: rgb(64, 63, 63); */
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgb(78, 70, 70);
+    z-index: 10000;
+    /* position: fixed; */
+    position: sticky;
+    top: 0px;
+}
+.nav h2{
+    color: white;
+    font-size: 1.7rem;
+}
+.nav h2 span{
+    color: rgb(231, 13, 13);
+}
+.tittle a{
+    text-decoration: none;
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+#item li a:hover{ 
+    color: rgb(63, 227, 18);
+}
+
+.icon i{
+    margin-right: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#bar{
+    color: rgb(225, 26, 26);
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display: none;
+}
+.back .mid{
+    max-width: 50%;
+    /* height:100vh; */
+    position: relative;
+    left: 27%;
+    top: 158px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* border: 2px solid white; */
+    
+}
+.mid p{
+    color: grey;
+    line-height: 2em;
+}
+.mid h2{
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 70px;
+}
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin:9px;
+    line-height: 2rem;
+    
+}
+.mid .btn a.simple{
+    color: white;
+    font-weight: 500px;
+    padding: 5px;
+}
+.mid .btn a.simple:hover{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.mid .btn a.border{
+    font-weight: 500px;
+    color: rgb(10, 239, 10);
+    padding: 5px;
+    border: 1px solid rgb(17, 228, 17);
+    border-radius: 5px;
+}
+.mid .btn a.border:hover{
+    text-decoration: underline;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: rgb(30, 29, 29);
+}
+.details h3,h6,h5{
+    color: white;
+}
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.details .one h3 span{
+    color: brown;
+}
+.details .one h3{
+    font-size: 2.1rem;
+    padding-bottom: 1.2rem;
+}
+.details .one h6{
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+    color: rgb(211, 211, 211);
+}
+.details .one p{
+    font-size: 1rem;
+    padding-bottom: 2.5rem;
+    color: rgb(154, 154, 154);
+}
+.details .one p span{
+    color: rgb(37, 220, 33);
+}
+.details .one a{
+    color: white;
+    background-color: red;
+    padding: 10px 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.details .one a:hover{
+    background-color: rgb(175, 34, 34);
+}
+.details .two{
+    width: 45%;
+    margin-bottom: 50px;
+    border-left: 1px solid grey;
+    padding-left: 70px;
+}
+.details .two h3{
+    font-size: 2.1rem;
+}
+.details .two h5{
+    font-size: 1rem;
+}
+.details .two p{
+    font-size: 1rem;
+    color: rgb(179, 179, 179);
+}
+.trainer{
+    background-color: rgb(219, 222, 224);
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .about{
+    width: 40%;
+}
+.trainer .about h2{
+    font-size: 2.1rem;
+    /* color: black; */
+    padding-bottom:1rem;
+}
+.trainer .about p{
+    position: relative;
+    bottom: 20px;
+    color: rgb(50, 49, 49);
+}
+.trainer .people{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(209, 207, 207);
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.trainer .people .team1 i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(51, 51, 198);
+}
+.trainer .people .team1 .name, .trainer .people .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1 .name h4{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.trainer .people .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+
+.trainer .people .team2{
+    width: 45%;
+    height: auto;
+    margin-left: 35px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(209, 207, 207);
+}
+.trainer .people .team2 .img img{
+    width: 100%;
+    height: 306px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    
+}
+.trainer .people .team2 i{
+    font-size: 1.2rem;
+    cursor: pointer;;
+    color: rgb(51, 51, 198);
+}
+.trainer .people .team2 .name, .trainer .people .team2 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team2 .name h4{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.trainer .people .team2 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+.class .classMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .paragraph{
+    font-size: 1.3rem;
+    color: rgb(88, 88, 88);
+    padding-bottom: 6px;  
+    text-align: center;
+}
+.class .h2{
+    font-size: 2.3rem;
+    color: rgb(34, 34, 34);
+    padding-bottom: 50px;
+    text-align: center;  
+    font-weight: 700;
+}
+
+
+.class .classMenu .team1{
+    width: 32%;
+    /* height: 400px; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(198, 195, 195);
+    cursor: pointer;
+}
+.class .classMenu .team1 .img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.class .classMenu .team1 i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(51, 51, 198);
+}
+.class .classMenu .team1 .name, .class .classMenue .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team1 .name h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.class .classMenu .team1 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.class .classMenu .team1 .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.class .classMenu .team2{
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(209, 207, 207);
+    cursor: pointer;
+}
+.class .classMenu .team2 .img img{
+    width: 100%;
+    /* height: 400px; */
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.class .classMenu .team2 i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(51, 51, 198);
+}
+.class .classMenu .team2 .name, .class .classMenue .team2 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team2 .name h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.class .classMenu .team2 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.class .classMenu .team2 .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.class .classMenu .team3{
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(209, 207, 207);
+    cursor: pointer;
+}
+.class .classMenu .team3 .img img{
+    width: 100%;
+    /* height: 50%; */
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.class .classMenu .team3 i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(51, 51, 198);
+}
+.class .classMenu .team3 .name, .class .classMenue .team3 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team3 .name h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.class .classMenu .team3 .teamdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.class .classMenu .team3 .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.class .classMenu .para{
+    font-weight: bold;
+}
+.class .classMenu .num h5{
+   color: white;
+   font-size: 1.3rem;
+   padding: 3px 8px;
+   border-radius: 100%;
+   background-color: brown;
+}
+.class .classMenu .pro{
+   color: rgb(88, 88, 88);
+   font-style: italic;
+}
+.class .classMenu span{
+   color: rgb(10, 128, 10);
+}
+.contact{
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact .form{
+    width: 45%;
+}
+.contact .form h2{
+    font-size: 2rem;
+    line-height: 6rem;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+}
+.contact .form .submit input{
+   width: 100%;
+   margin-top: 10px;
+   height: 2rem;
+   padding-left: 5px;
+}
+.contact .form .submit textarea{
+    width: 100%;
+   margin-top: 10px;
+   height: 4rem;
+   padding-left: 5px;
+}
+.contact .form .submit a{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.contact .form .submit a:hover{
+    background-color: rgb(216, 26, 26);
+}
+.contact .map{
+    border-left: 1px solid rgb(40, 40, 40);
+    padding: 18px;
+}
+.contact .map h2{
+    font-size: 2rem;
+}
+.contact .map i{
+    color: rgb(235, 15, 15);
+}
+.contact .map p{
+    color: rgb(72, 69, 69)
+}
+.footer{
+    border-top: 1px solid grey;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(142, 141, 141);
+}
+.fa-envelope{
+    margin-right: 5px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width:991px){
+    .nav{
+    
+        padding: 1rem 3rem;
+        
+    }
+    .nav h2{
+       
+        font-size: 1.6rem;
+    }
+    .nav h2 span{
+        color: rgb(231, 13, 13);
+    }
+    .tittle a{
+        text-decoration: none;
+    }
+    #item{
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background-color:rgba(0,0,0,0.8);
+        z-index: 1000000;
+        margin-top: 4.2rem;
+        transition: 0.5s ease;
+    }
+    #item li{
+        padding-right: 0px;
+        padding: 4px 0px;
+
+    }
+    #item li a{
+        font-size: 1.2rem;
+    }
+    #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon i{
+        margin-right: 0px 15px 0 15px;
+    }
+    #bar{
+        display: initial;
+        cursor: pointer;
+    }
+
+    /* .mid p{
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+
+    }
+    .mid h2{
+        font-size: 2.5rem;
+    }
+    .mid .btn a{
+        margin-top: 0.2rem;
+        
+    }
+    .mid .btn a.simple{
+        padding: 0.4rem 1rem;
+    }
+    .mid .btn a.border{
+        padding: 0.4rem 1rem;
+     
+    } */
+
+    .back{
+        max-width: 100%;
+        /* height: 110vh; */
+    }
+    .back .mid {
+        
+    }
+    .back .mid .btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* details */
+    
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .details .one h3{
+        font-size: 1.5rem;
+    }
+    .details .one h6{
+        font-size: 0.9rem;
+    }
+    .details .one p{
+        font-size: 0.8rem;
+    }
+    .details .two{
+        margin-top: 2rem;
+        border-left: none;
+        border-top: 1px solid rgb(159, 159, 159);
+        padding-left: 0;
+    }
+    .details .two h3{
+        font-size: 1.5rem;
+    }
+
+    /*trainer  */
+    .trainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0rem;
+        max-width: 100%;
+    }
+    .trainer .about{
+        max-width: 200%;
+    }
+    .trainer .about h2{
+       font: size 2rem;
+    }
+    .trainer .people{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer .people .team1{
+        width: 120%;
+        /* height: 100%; */
+    }
+    .trainer .people .team2{
+        width: 120%;
+        margin-right: 33px;
+    }
+    .trainer .people .team2 .img img{
+        height: 500px;
+    }
+    
+    
+    /* classes */
+    .class .classMenu{
+        display: flex;
+        flex-direction: column;
+        width: 300%;
+    }
+    .class .classMenu .team1,.team2,.team3{
+        margin-top: 10px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .form{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .contact .map{
+        border-left: none;
+        border-top: 1px solid rgb(40, 40, 40);
+        padding-top: 28px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .mailcall{
+        text-align: center;
+    }
+}
